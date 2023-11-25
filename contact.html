@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+  CSC309 Assignment 1
+  
+  University of Toronto
+  Fall 2023
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSC309 A1 - Contact</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- TODO: complete me -->
+    <header>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html" class="active">Contact</a></li>
+      </ul>
+    </header>
+    <main>
+      <div class="portrait-div">
+        <img src="portrait.jpg" alt="Yryskeldi Kurmanbekov" />
+      </div>
+      <h1>Yryskeldi Kurmanbekov</h1>
+      <a
+        href="mailto:yryskeldi.kurmanbekov@mail.utoronto.ca?subject=Bug%20Found&body=I%20found%20the%20following%20bug%20on%20your%20website%3A%0A%0A"
+        class="email-link"
+        >yryskeldi.kurmanbekov@mail.utoronto.ca</a
+      >
+      <form action="https://postman-echo.com/post" method="post">
+        <div class="form-row">
+          <div class="form-col-1">
+            <label>Your Email:</label>
+          </div>
+          <div class="form-col-2">
+            <input type="email" name="email" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-col-1">
+            <label>Feedback:</label>
+          </div>
+          <div class="form-col-2">
+            <textarea
+              name="feedback"
+              placeholder="Enter your feedback here"
+              required
+            ></textarea>
+          </div>
+        </div>
+        <div class="form-row attachment-row">
+          <div class="form-col-1">
+            <label>Attachment:</label>
+          </div>
+          <div class="form-col-2">
+            <input type="file" name="attachments" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-col-1">
+            <input type="checkbox" name="consent" value="yes" required />
+          </div>
+          <div class="form-col-2">
+            <label>You agree to receive emails from me</label>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-col-1"></div>
+          <div class="form-col-2">
+            <button type="submit">Send Feedback</button>
+          </div>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <p>Copyright 2023 by kurmanbe.</p>
+    </footer>
+  </body>
+</html>

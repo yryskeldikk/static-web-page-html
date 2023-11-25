@@ -1,0 +1,263 @@
+/*
+ * style.css
+ *
+ * CSC309 Assignment 1
+ * 
+ * University of Toronto
+ * Fall 2023
+ *
+ */
+ /* Basic styles for navigation links */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #BBBBBB;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+/* Nav Bar */
+header {
+  width: 100%;
+  background-color: #333333;
+  overflow: auto;
+  margin-bottom: 128px;
+  padding-left: 24px;
+  box-sizing: border-box;
+}
+
+header ul {
+  list-style-type: none; 
+}
+  
+header li {
+  float: left;
+}
+
+header a {
+  font-size: 18px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #00b8d4;
+  margin: 25px 2rem 25px 0;
+}
+
+header .active {
+  color: #b2f5ea;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: white;
+}
+
+main {
+  color: #333333;
+  flex: 1;
+  text-align: center;
+}
+
+.portrait-div {
+  height: 200px;  
+  width: 200px;
+  border-radius: 100px;
+  overflow: hidden;
+  margin: auto;
+}
+
+img {
+  width: 100%; 
+  height: auto; 
+  display: block;
+}
+
+main h1 {
+  font-size: 47px;
+  margin: 32px 0 15px 0;
+}
+
+main p {
+  font-size: 22px;
+  margin-bottom: 23px;
+}
+
+button {
+  width: 128px;
+  height: 38px;
+  text-align: center;
+  color: #007EA8;
+  font-size: 16px;
+  font-weight: bold;  
+  border-radius: 4px; 
+  border: none;
+}
+
+button[type='submit'] {
+  font-size: 13.8px;
+  background-color: #FFFFFF;
+  border: 2px solid #007EA8;
+  border-radius: 4px; 
+}
+
+button[type='submit']:hover {
+  background-color: #007EA8;
+  color:  #FFFFFF;
+  border: 2px solid #FFFFFF; 
+  cursor: pointer;
+}
+
+button a {
+  display: flex;
+  width: 125px;
+  height: 35px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #007EA8;
+  background-color: #FFFFFF;
+  border: 2px solid #007EA8;
+  border-radius: 4px; 
+}
+
+button a:hover {
+  background-color: #007EA8;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF; 
+  cursor: pointer;
+}
+
+.email-link {
+  display: block;
+  margin-top: 17px;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 32px;
+  word-wrap: break-word;
+  line-height: 33px;
+}
+
+form {
+  display: block;
+  margin: 27px auto 0 auto;
+  padding: 0 8px;
+  max-width: 772px;
+}
+
+.form-row {
+  display: flex;
+  padding-bottom: 16px;
+}
+
+.form-col-1 {
+  flex: 1;
+  text-align: right;
+  font-weight: bold;
+  margin-right: 16px;
+}
+
+.form-col-2 { 
+  flex: 4;
+  text-align: left;
+}
+
+input, textarea {
+  width: calc(100% - 28px);
+  border: 1px solid #DDDDDD;
+  border-radius: 3px;
+  padding: 14px;
+}
+
+input[type=checkbox] {
+  width: auto;
+}
+
+input[type=email] {
+  height: 20px;
+}
+
+textarea {
+  height: 84px;
+}
+
+embed {
+  max-width: 720px;
+  height: 60vh;
+  width: 100%;
+}
+
+#toggle {
+    position: absolute;
+    left: -100vw;
+}
+
+.course-list {
+  font-size: 19px;
+  display: none;
+  margin: 1rem 0 0 0;
+}
+
+#toggle:checked ~ .course-list {
+  display: block;
+}
+
+.course-list a {
+  text-decoration: none; 
+  color: #007EA8;
+  padding: 2px 8px;
+}
+
+ul + p {
+  font-size: 15px;
+}
+
+/* Footer */
+footer {
+  margin-top: 128px;
+  width: 100%;
+  height: 3rem;
+  background-color: #333;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+}
+
+@media screen and (max-width: 480px) {
+  .form-row {
+      flex-direction: column;
+  }
+
+  .form-col-1 {
+      flex: auto;
+      text-align: left; 
+      padding-bottom: 8px;
+  }
+
+  .form-col-2 {
+      flex: auto;
+  }
+
+  main h1 {
+      font-size: 32px;
+  }
+
+  main p {
+    font-size: 15px;
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .email-link {
+    font-size: 23px;
+  }
+}
+
